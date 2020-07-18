@@ -21,5 +21,10 @@ describe("My First Test Suite", function () {
     $el.find('button').click();
     }
 });
+cy.get('.brand').then(function(logoelement) {
+    cy.log(logoelement.text());
+});
+
+
   });
 });
